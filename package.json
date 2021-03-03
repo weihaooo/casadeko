@@ -1,0 +1,20 @@
+{
+  "name": "Casadeko",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "2.315.0",
+    "express": "latest",
+    "body-parser": "latest",
+    "pug": "latest",
+    "path": "latest",
+    "nodemailer": "latest",
+    "express-fileupload": "latest",
+    "moment": "latest",
+    "mongodb": "latest",
+    "assert": "latest"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

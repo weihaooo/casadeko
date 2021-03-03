@@ -1,0 +1,443 @@
+extends layout
+
+block content
+    button(id="backToTopBtn", title="Back To Top") 
+        span.ti-arrow-up
+    .nav-menu.fixed-top
+        .container
+            .row
+                .col-md-12
+                    nav.navbar.navbar-light.navbar-expand-lg(style="padding: 0px;")
+                        a.navbar-brand(href="#")
+                            img.img-fluid(src="images/logo.jpg", style="max-height: 60px;")
+                            span(style="font-weight: bold; display: inline-block; padding-left: 15px; vertical-align: -30%;") CASADEKO
+                        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbar",aria-controls="navbar",aria-expanded="false",aria-label="Toggle Navigation")
+                            span.navbar-toggler-icon
+                        .collapse.navbar-collapse(id="navbar")
+                            ul.navbar-nav.ml-auto
+                                li.nav-item
+                                    a.nav-link.active(href="#home") Home
+                                        span.sr-only (current)
+                                li.nav-item
+                                    a.nav-link(href="#aboutus") About Us
+                                li.nav-item
+                                    a.nav-link(href="#packages") Packages
+                                li.nav-item
+                                    a.nav-link(href="#gallery") Gallery
+                                li.nav-item
+                                    a.nav-link(href="#freequote") Free Quote
+                                li.nav-item
+                                    a.nav-link(href="#consultation") Book a Free Consultation
+                                li.nav-item
+                                    a.nav-link(href="#contactus") Contact Us
+                                li.nav-item(style="border-left: 1px solid black;")
+                                    
+                                li.nav-item
+                                    a.nav-link(href="https://www.facebook.com/Casadeko/", target="_blank")
+                                        span.ti-facebook
+                                li.nav-item
+                                    a.nav-link(href="https://wa.me/6581863827?text=Hi,%20I'm%20interested%20in%20your%20products.", target="_blank")
+                                        i.fab.fa-whatsapp
+    header(id="home")
+        .mt-5.main-image.img-responsive
+        .container.header-tagline
+            h1.tagline CASADEKO
+            p.tagline Affordable Curtains & Blinds
+                br
+                | To Beautify Your Nest
+            a.btn.btn-main(style="margin-top: 100px;", href="https://wa.me/6581863827?text=Hi,%20I'm%20interested%20in%20your%20products.", target="_blank") Whatsapp Ben @ +65 8186 3827
+            a.btn.btn-main(style="margin-top: 100px;", href="https://wa.me/6596655914?text=Hi,%20I'm%20interested%20in%20your%20products.", target="_blank") Whatsapp Joe @ +65 9665 5914
+            br
+            a.btn.btn-main(style="margin-top: 10px;", href="#freequote") Get Free Quote
+            //a.btn.btn-main(style="margin-top: 10px;", disabled) Book a non-obligation on-site consultation
+    .section.light-bg2(id="aboutus")
+        .container
+            .section-title
+                h3 We Provide:
+            .row.text-center
+                .col-6.col-md-2.mb-4
+                    i.fas.fa-wrench(style="font-size: 40px;")
+                    br
+                    | Free Installation
+                .col-6.col-md-2.mb-4
+                    span.ti-time(style="font-size: 40px;")
+                    br
+                    | Install in 7 Working Days
+                .col-6.col-md-2.mb-4
+                    span.ti-money(style="font-size: 40px;")
+                    br
+                    | Free Upgrades
+                .col-6.col-md-2.mb-4
+                    span.ti-location-pin(style="font-size: 40px;")
+                    br
+                    | Made in Singapore
+                .col-6.col-md-2.mb-4
+                    span.ti-truck(style="font-size: 40px;")
+                    br
+                    | Free Delivery
+                .col-6.col-md-2.mb-4
+                    i.fas.fa-certificate(style="font-size: 40px;")
+                    br
+                    | Up to Life-Time Service & Warranty Coverage 
+            .section-title
+                h3 Why Engage Us?
+            .row
+                .offset-2.col-10.offset-md-1.col-md-5.mb-4
+                    i.fas.fa-star.mr-3.engage-star
+                    span.engage-header Free upgrade to sewn-in micro flex hooks
+                    br
+                    span.engage-text Latest technology that solves the hassle of removing the hooks during machine wash
+                .offset-2.col-10.offset-md-0.col-md-5.mb-4
+                    i.fas.fa-star.mr-3.engage-star
+                    span.engage-header Transparent prices. No gimmicks.
+                    br
+                    span.engage-text Prices stated are not subjected to GST. What you see is what you pay.
+                .offset-2.col-10.offset-md-1.col-md-5.mb-4
+                    i.fas.fa-star.mr-3.engage-star
+                    span.engage-header Singapore Registered Company
+                .offset-2.col-10.offset-md-0.col-md-5.mb-4
+                    i.fas.fa-star.mr-3.engage-star
+                    span.engage-header Friendly & experienced sales team
+                .offset-2.col-10.offset-md-1.col-md-5.mb-4
+                    i.fas.fa-star.mr-3.engage-star
+                    span.engage-header Curtains Locally Sewn
+                .offset-2.col-10.offset-md-0.col-md-5.mb-4
+                    i.fas.fa-star.mr-3.engage-star
+                    span.engage-header Fabrics imported from Europe, Turkey and Taiwan only
+                .col-12.text-center
+                    i.fas.fa-star.engage-star
+                    br
+                    span.engage-header NO HIDDEN COST 
+                    br
+                    span.engage-header NO GST
+    
+    .section.light-bg(id="packages")
+        .container
+            .section-title
+                h3 HDB BTO/CONDO/EXEC CONDO
+                    br
+                    | Package Deal
+            .row
+                .col-12.col-md-4.p-4
+                    .row
+                        .col-12.package.p-4
+                            h4.text-center 3 Room
+                            h5.text-center(style="text-decoration: line-through;") Usual Price $780
+                            h5.text-center Package Deal $580!!!
+                            div.text-center.mt-4 What you get:
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Choice of blinds or curtains
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Dim out curtains up to 95% light blockage
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Free Installation
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Free upgrades to sewn-in micro flex hooks
+                            br
+                            
+                .col-12.col-md-4.p-4
+                    .row
+                        .col-12.package.p-4
+                            h4.text-center 4 Room
+                            h5.text-center(style="text-decoration: line-through;") Usual Price $880
+                            h5.text-center Package Deal $680!!!
+                            div.text-center.mt-4 What you get:
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Choice of blinds or curtains
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Dim out curtains up to 95% light blockage
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Free Installation
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Free upgrades to sewn-in micro flex hooks
+                            br
+                            
+                .col-12.col-md-4.p-4
+                    .row
+                        .col-12.package.p-4
+                            h4.text-center 5 Room
+                            h5.text-center(style="text-decoration: line-through;") Usual Price $980
+                            h5.text-center Package Deal $780!!!
+                            div.text-center.mt-4 What you get:
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Choice of blinds or curtains
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Dim out curtains up to 95% light blockage
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Free Installation
+                            br
+                            .row
+                                .col-1
+                                    i.fas.fa-star.mr-3(style="font-size: 20px;")
+                                .col-10
+                                    span Free upgrades to sewn-in micro flex hooks
+                            br
+                            
+    .section.light-bg2(id="products")
+        .container
+            .section-title
+                h3 Products
+            .row.text-center
+                .col-12.offset-1.col-md-5.mr-3.mb-3
+                    .row.products
+                        .col-6.p-0
+                            img.img-fluid(src="/images/main11.jpg")
+                        .col-6.p-4
+                            h4 Curtains
+                            //span description
+                        
+                .col-12.col-md-5.mb-3
+                    .row.products
+                        .col-6.p-0
+                            img.img-fluid(src="/images/main11.jpg")
+                        .col-6.p-4
+                            h4 Roller Blinds
+                            //span description
+                .col-12.offset-1.col-md-5.mr-3.mb-3
+                    .row.products
+                        .col-6.p-0
+                            img.img-fluid(src="/images/main11.jpg")
+                        .col-6.p-4
+                            h4 Unislat Curtains
+                            //span description
+                        
+                .col-12.col-md-5.mb-3
+                    .row.products
+                        .col-6.p-0
+                            img.img-fluid(src="/images/main11.jpg")
+                        .col-6.p-4
+                            h4 Korean Blinds
+                            //span description
+                .col-12.offset-1.col-md-5.mr-3.mb-3
+                    .row.products
+                        .col-6.p-0
+                            img.img-fluid(src="/images/main11.jpg")
+                        .col-6.p-4
+                            h4 Vertical Blinds
+                            //span description
+                        
+                .col-12.col-md-5.mb-3
+                    .row.products
+                        .col-6.p-0
+                            img.img-fluid(src="/images/main11.jpg")
+                        .col-6.p-4
+                            h4 Bamboo Blinds
+                            //span description
+                .col-12.offset-1.col-md-5.mr-3.mb-3
+                    .row.products
+                        .col-6.p-0
+                            img.img-fluid(src="/images/main11.jpg")
+                        .col-6.p-4
+                            h4 Venetian Blinds
+                            //span description
+                        
+                .col-12.col-md-5.mb-3
+                    .row.products
+                        .col-6.p-0
+                            img.img-fluid(src="/images/main11.jpg")
+                        .col-6.p-4
+                            h4 Outdoor Blinds
+                            //span description
+                                
+    .section.light-bg(id="gallery")
+        .container
+            .section-title
+                h3 Gallery
+            .row
+                .col-12
+                    #carousel1.carousel.slide(data-ride="carousel")
+                        ol.carousel-indicators
+                            li.active(data-target="#carousel1", data-slide-to="0")
+                            li(data-target="#carousel1", data-slide-to="1")
+                            li(data-target="#carousel1", data-slide-to="2")
+                        .carousel-inner(style="width: auto; max-height:600px !important;")
+                            .carousel-item.active
+                                img.img-fluid(src="/images/main11.jpg",alt="test")
+                                .carousel-caption.black
+                                    h3.black 
+                                    p.black 
+                            .carousel-item
+                                img.img-fluid(src="/images/main11.jpg",alt="test")
+                                .carousel-caption
+                                    h3.black 
+                                    p.black 
+                        a.left.carousel-control-prev(data-target="#carousel1",role="button", data-slide="prev",style="cursor: pointer;")
+                            span.carousel-control-prev-icon(aria-hidden="true")
+                            span.sr-only Previous
+                        a.right.carousel-control-next(data-target="#carousel1",role="button", data-slide="next",style="cursor: pointer;")
+                            span.carousel-control-next-icon(aria-hidden="true")
+                            span.sr-only Next
+    .section.light-bg2(id="freequote")
+        .container
+            .section-title
+                h3 Get a Free Quote
+            .row
+                .col-6
+                    h3 Get Your Free Quote
+                    | Fill in your details in the form to the right and tell us what you are looking for. It will fire an email to us. Share with us the number of rooms, curtains and/or blinds preferences, your budget and etc.
+                    | We will follow up with you as soon as possible with a free quote.
+                .col-6.products.p-3
+                    form#freequoteform(name="freequoteform",method="post", action="/freequote", enctype="multipart/form-data")
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="name") Name:
+                            .col-sm-9
+                                input#name.form-control(type="text", name="name", placeholder="Enter your name here", required)
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="email") Email:
+                            .col-sm-9
+                                input#email.form-control(type="email", name="email", placeholder="Enter your email here", required)
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="mobilenumber") Mobile Number:
+                            .col-sm-9
+                                input#mobilenumber.form-control(type="number", name="mobilenumber", placeholder="Enter your mobile number here", required)
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="comments") Comments:
+                            .col-sm-9
+                                textarea#comments.form-control(type="number", name="comments", placeholder="Enter your comments here", required)
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="floorplan") Floorplan Image(Optional):
+                            .col-sm-9.pt-4
+                                input#floorplan.form-control-file(type="file", name="floorplan")  
+                        input.btn.btn-primary(type="submit", value="Get Quote", style="float: right; background: black;")
+
+    .section.light-bg(id="consultation")
+        .container
+            .section-title
+                h3 Book a Free Consultation With Us Now!
+            .row
+                .col-6
+                    h3 Book a Consultation Slot
+                    | Fill in your details in the form to the right and choose a slot. It will fire an email to us. 
+                    | We will follow up with you to confirm the booking.
+                .col-6.products.p-3
+                    form#bookslotform(name="bookslotform",method="post", action="/bookslot")
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="nameBook") Name:
+                            .col-sm-9
+                                input#nameBook.form-control(type="text", name="nameBook", placeholder="Enter your name here", required)
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="emailBook") Email:
+                            .col-sm-9
+                                input#emailBook.form-control(type="email", name="emailBook", placeholder="Enter your email here", required)
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="mobilenumberBook") Mobile Number:
+                            .col-sm-9
+                                input#mobilenumberBook.form-control(type="number", name="mobilenumberBook", placeholder="Enter your mobile number here", required)
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="commentsBook") Comments:
+                            .col-sm-9
+                                textarea#commentsBook.form-control(type="number", name="commentsBook", placeholder="Enter your comments here", required)
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="comments") Date:
+                            .col-sm-9
+                                input#date.form-control(type="date",value=chosenDate, name="date", min=tomorrow, required)
+                        .form-group.row
+                            label.col-sm-3.col-form-label(for="slot") Pick a Slot:
+                            .col-sm-9.btn-group-toggle(data-toggle="buttons")
+                                .btn-group.mb-3
+                                    label.btn.radioslot 1000-1200
+                                        input(type="radio", name="slot",value="1", id="1", disabled=(slots[0] == 0 ? true : false))
+                                    label.btn.radioslot 1200-1400
+                                        input(type="radio", name="slot",value="2", id="2", disabled=(slots[1] == 0 ? true : false))
+                                .btn-group.mb-3
+                                    label.btn.radioslot 1400-1600
+                                        input(type="radio", name="slot",value="3", id="3", disabled=(slots[2] == 0 ? true : false))
+                                    label.btn.radioslot 1600-1800
+                                        input(type="radio", name="slot",value="4", id="4", disabled=(slots[3] == 0 ? true : false))
+                                .btn-group.mb-3.mr-5
+                                    label.btn.radioslot 1800-2000
+                                        input(type="radio", name="slot",value="5", id="5", disabled=(slots[4] == 0 ? true : false))
+                                    label.btn.radioslot 2000-2200
+                                        input(type="radio", name="slot",value="6", id="6", disabled=(slots[5] == 0 ? true : false))
+                                .btn-group
+                                    label.btn.radioslot 2200-0000
+                                        input(type="radio", name="slot",value="7", id="7", disabled=(slots[6] == 0 ? true : false))
+                        input.btn.btn-primary(type="submit", value="Book Appointment", style="float: right; background: black;")
+    .light-bg2(id="contactus").border-bottom.border-dark
+        .container
+            .section-title.mt-3
+                h3(style="text-decoration: underline;") Contact Us
+            .row
+                .col-md-4.text-center
+                    a.contact(href="https://wa.me/6581863827?text=Hi,%20I'm%20interested%20in%20your%20products.", target="_blank")
+                        p.text-center
+                            i.fab.fa-whatsapp.contact-icon
+                            | Whatsapp Us @ +65 81863827
+                .col-md-4.text-center
+                    a.contact(href="sms:+6581863827?&body=I%27m%20interested%20in%20your%20product.%20Please%20contact%20me.")
+                        p.text-center
+                            i.fas.fa-mobile-alt.contact-icon
+                            | Sms Us @ +65 81863827
+                .col-md-4.text-center
+                    a.contact(href="mailto:casa.curtain@gmail.com")
+                        p.text-center
+                            i.fas.fa-envelope.contact-icon
+                            | casa.curtain@gmail.com
+                
+            .row
+                .offset-md-2.col-md-4.text-center
+                    a.contact(href="https://www.facebook.com/Casadeko/", target="_blank")
+                        p.text-center
+                            span.ti-facebook.contact-icon
+                            | Like us on Facebook
+                .col-md-4.text-center
+                    a.contact(href="https://m.me/Casadeko", target="_blank")
+                        p.text-center
+                            i.fab.fa-facebook-messenger.contact-icon
+                            | Message us on Facebook
+                .col-md-2
+            .row
+                .col-md-12
+                    a.contact(href="https://www.google.com/maps/search/280+woodland+industrial+park+e5+harvest+%2310-08+singapore/@1.4526129,103.7933985,17z/data=!3m1!4b1", target="_blank")
+                        p.text-center
+                            i.fas.fa-map-marker-alt.contact-icon
+                            | 280 Woodland Industrial Park E5 Harvest #10-08         
+    footer.text-center.light-bg.pb-2
+        span COPYRIGHT © 2018. ALL RIGHTS RESERVED.
+        
+       
+   

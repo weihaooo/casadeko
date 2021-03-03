@@ -1,0 +1,5 @@
+/bin
+/.ebextensions
+/node_modules
+LICENSE
+/public
