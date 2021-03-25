@@ -60,29 +60,42 @@ if (cluster.isMaster) {
         console.log(dateString);
         var available = [1,1,1,1,1,1,1];
         // Use connect method to connect to the server
-        MongoClient.connect(url,{ useNewUrlParser: true }, function(err, client) {
-          if(err) {
-                console.log('Error occurred while connecting to MongoDB Atlas...\n',err);
-            }
-            console.log('Connected...');
-          const collection = client.db(dbName).collection("Consultation");
+        // MongoClient.connect(url,{ useNewUrlParser: true }, function(err, client) {
+          // if(err) {
+                // console.log('Error occurred while connecting to MongoDB Atlas...\n',err);
+            // }
+            // console.log('Connected...');
+          // const collection = client.db(dbName).collection("Consultation");
           
-          function queryCollection(collection, callback){
-            collection.find( { date: dateString } ).toArray(function(err, result) {
-            if (err) {
-                console.log(err);
-            } else if (result.length >= 0) {
-                callback(result);
-            }
-            });
-            }
+          // function queryCollection(collection, callback){
+            // collection.find( { date: dateString } ).toArray(function(err, result) {
+            // if (err) {
+                // console.log(err);
+            // } else if (result.length >= 0) {
+                // callback(result);
+            // }
+            // });
+            // }
 
-            queryCollection(collection, function(result){
-                //You can do more stuff with the result here
-                result.forEach(function(value) {
-                    available[value.slot-1] = 0;
-                });
-                res.render('index', {
+            // queryCollection(collection, function(result){
+                // //You can do more stuff with the result here
+                // result.forEach(function(value) {
+                    // available[value.slot-1] = 0;
+                // });
+                // res.render('index', {
+                    // static_path: 'static',
+                    // theme: process.env.THEME || 'flatly',
+                    // flask_debug: process.env.FLASK_DEBUG || 'false',
+                    // slots: available,
+                    // tomorrow: dateString,
+                    // chosenDate: dateString
+                // });
+                // console.log(available);
+            // });
+          
+          // client.close();
+        // });
+        res.render('index', {
                     static_path: 'static',
                     theme: process.env.THEME || 'flatly',
                     flask_debug: process.env.FLASK_DEBUG || 'false',
@@ -90,12 +103,6 @@ if (cluster.isMaster) {
                     tomorrow: dateString,
                     chosenDate: dateString
                 });
-                console.log(available);
-            });
-          
-          client.close();
-        });
-        
         
     });
     app.post('/bookslot', function(req, res) {
